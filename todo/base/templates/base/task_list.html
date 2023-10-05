@@ -5,7 +5,7 @@
 <div class="header-bar">
     <div>
         <h1>Salam aleykum {{ request.user|title }}</h1>
-        <h3 style="margin:0">You have<i>{{ count }}</i>incomplete task {{ count|pluralize:"s" }}</h3>
+        <h3 style="margin:0">У вас есть <i>{{ count }} </i>невыполненных задачи </h3>
     </div>
 
 {% if request.user.is_authenticated  %}
